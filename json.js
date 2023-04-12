@@ -1,8 +1,8 @@
 const json = {
-  "title": "Global Physical Activity Questionnaire (GPAQ)",
+  "title": "Patient Health Questionnaire(PHQ-9)",
   "completedHtmlOnCondition": [{
     "expression": "{totalScore} > ({maxScore} / 3 * 2)",
-    "html": "Your PHQ-9 score is {totalScore} out of {maxScore} points. Antidepressant or psychotherapy is recommended. If your score is higher than 20 than both are recommended(especially if not improved on monotherapy"
+    "html": "Your PHQ-9 score is {totalScore} out of {maxScore} points. Antidepressant or psychotherapy is recommended. If your score is higher than 20 than both are recommended(especially if not improved on monotherapy)"
   }, {
     "expression": "{totalScore} <= ({maxScore} / 3)",
     "html": "Your PHQ-9 score is {totalScore} out of {maxScore} points. Diagnosis: Minimal Symptoms. Treatment Recommendation: Support, educate to call if worse, return in one month"
@@ -18,7 +18,7 @@ const json = {
     "elements": [{
       "type": "panel",
       "name": "activity-at-work",
-      "title": "Patient Health Questionnaire",
+      "title": "Over the last 2 weeks, how often have you been bothered by any of the following problems?",
       "elements": [{
         "type": "radiogroup",
         "name": "question1",
