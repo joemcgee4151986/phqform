@@ -2,13 +2,13 @@ const json = {
   "title": "Patient Health Questionnaire(PHQ-9)",
   "completedHtmlOnCondition": [{
     "expression": "{totalScore} > ({maxScore} / 3 * 2)",
-    "html": "Your PHQ-9 score is {totalScore} out of {maxScore} points. Antidepressant or psychotherapy is recommended. If your score is higher than 20 than both are recommended(especially if not improved on monotherapy)"
+    "html": "Your PHQ-9 score is {totalScore}. Antidepressant or psychotherapy is recommended. If your score is higher than 20 than both are recommended(especially if not improved on monotherapy)"
   }, {
     "expression": "{totalScore} <= ({maxScore} / 3)",
-    "html": "Your PHQ-9 score is {totalScore} out of {maxScore} points. Diagnosis: Minimal Symptoms. Treatment Recommendation: Support, educate to call if worse, return in one month"
+    "html": "Your PHQ-9 score is {totalScore}. Diagnosis: Minimal Symptoms. Treatment Recommendation: Support, educate to call if worse, return in one month"
   }, {
     "expression": "({maxScore} / 3 * 2) < {totalScore} <= ({maxScore} / 3)",
-    "html": "Your PHQ-9 score is {totalScore} out of {maxScore} points. Diagnosis: Minor Depression, Dysthymia, Major Depression. Treatment Recommendation: Support, watchful waiting Antidepressent or psychotherapy "
+    "html": "Your PHQ-9 score is {totalScore}. Diagnosis: Minor Depression, Dysthymia, Major Depression. Treatment Recommendation: Support, watchful waiting Antidepressent or psychotherapy "
   }],
   "pages": [{
     "name": "physical-activity",
